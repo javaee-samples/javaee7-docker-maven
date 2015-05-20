@@ -1,0 +1,6 @@
+# Run Java EE 7 Application as Docker Container using Maven
+
+This sample application shows how to package a Java EE 7 application
+as Docker image and run it within a container using
+https://github.com/rhuss/docker-maven-plugin[docker-maven-plugin].
+
