@@ -4,3 +4,8 @@ This sample application shows how to package a Java EE 7 application
 as Docker image and run it within a container using
 https://github.com/rhuss/docker-maven-plugin[docker-maven-plugin].
 
+. Create and configure a Docker Machine as explained at
+  http://blog.arungupta.me/docker-machine-seutp-docker-host-techtip78/.
+. `mvn package -Pdocker` to generate the Docker image
+. `mvn install -Pdocker` to run the Docker container
+
