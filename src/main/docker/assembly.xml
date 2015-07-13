@@ -7,7 +7,7 @@
             <includes>
                 <include>org.javaee7.sample:javaee7-docker-maven</include>
             </includes>
-            <outputDirectory>/opt/jboss/wildfly/standalone/deployments/</outputDirectory>
+            <outputDirectory>.</outputDirectory>
             <outputFileNameMapping>javaee7-docker-maven.war</outputFileNameMapping>
         </dependencySet>
     </dependencySets>
