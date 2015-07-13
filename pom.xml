@@ -48,17 +48,18 @@
                     <plugin>
                         <groupId>org.jolokia</groupId>
                         <artifactId>docker-maven-plugin</artifactId>
-                        <version>0.11.5-M1</version>
+                        <version>0.13.1</version>
                         <configuration>
                             <images>
                                 <image>
                                     <alias>user</alias>
                                     <name>arungupta/javaee7-docker-maven</name>
                                     <build>
-                                        <from>arungupta/wildfly:8.2</from>
+                                        <from>jboss/wildfly:8.2.0.Final</from>
                                         <assembly>
                                             <descriptor>assembly.xml</descriptor>
-                                            <basedir>/</basedir>
+                                            <basedir>/opt/jboss/wildfly/standalone/deployments/</basedir>
+                                            <user>jboss:jboss:jboss</user>
                                         </assembly>
                                         <ports>
                                             <port>8080</port>
@@ -69,6 +70,11 @@
                                         <ports>
                                             <port>8080:8080</port>
                                         </ports>
+                                        <log>
+                                            <prefix>WF</prefix>
+                                            <date>none</date>
+                                            <color>cyan</color>
+                                        </log>
                                     </run>
                                 </image>
                             </images>
