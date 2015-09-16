@@ -55,7 +55,7 @@
                                     <alias>user</alias>
                                     <name>arungupta/javaee7-docker-maven</name>
                                     <build>
-                                        <from>jboss/wildfly:8.2.0.Final</from>
+                                        <from>jboss/wildfly:9.0.0.Final</from>
                                         <assembly>
                                             <descriptor>assembly.xml</descriptor>
                                             <basedir>/opt/jboss/wildfly/standalone/deployments/</basedir>
